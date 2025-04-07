@@ -1,4 +1,4 @@
-# DiscordBotTest
+# Animal Crossing 24/7
 
 Este é um projeto de um bot para Discord desenvolvido em Python. O bot possui funcionalidades relacionadas à reprodução de músicas baseadas no horário atual, além de comandos básicos para interação com os usuários.
 
