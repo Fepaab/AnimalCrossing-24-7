@@ -179,6 +179,21 @@ async def on_voice_state_update(member, before, after):
             print(f'{horario()} INFO     O canal de voz {voice_client.channel.name} está vazio. Desconectando...')
             await voice_client.disconnect()
 
+@client.command(name='help')
+async def help_command(ctx):
+    """Comando para exibir a lista de comandos disponíveis."""
+    help_message = (
+        "Aqui estão os comandos disponíveis:\n"
+        "!select - Escolha um jogo e um clima.\n"
+        "!play - Inicia a reprodução de músicas.\n"
+        "!stop - Para a reprodução e desconecta do canal de voz.\n"
+        "!refresh - Reinicia a música atual.\n"
+        "!musica - Exibe a música que está sendo tocada no momento.\n"
+        "!help - Exibe esta mensagem de ajuda."
+    )
+    await ctx.send(help_message)
+
+
 # --------------------------------------------------------------------
 # Inicia o bot com o token fornecido
 # --------------------------------------------------------------------
