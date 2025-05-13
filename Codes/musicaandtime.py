@@ -10,10 +10,10 @@ def nowplaying():
 
     if HOUR == 0:
         hour_12 = 12
-        ampm = "am"
+        ampm = "A.M"
     elif HOUR < 12:
         hour_12 = HOUR
-        ampm = "am"
+        ampm = "A.M"
     elif HOUR == 12:
         hour_12 = 12
         ampm = "P.M."
